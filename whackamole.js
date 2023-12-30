@@ -18,6 +18,14 @@ let Startbtn = document.getElementById("start")
 let Moles = document.querySelectorAll(".mole");
 let Bushes = document.querySelectorAll(".bush");
 
+Moles.forEach(value => {
+    value.setAttribute("draggable", false)
+})
+Bushes.forEach(value => {
+    value.setAttribute("draggable", false)
+})
+
+
 
 Startbtn.addEventListener("click", start)
 
